@@ -22,8 +22,8 @@ M.opts = {
       i = {
         ["<Down>"] = actions.move_selection_next,
         ["<Up>"] = actions.move_selection_previous,
-        ["<C-j>"] = actions.move_selection_next,
-        ["<C-k>"] = actions.move_selection_previous,
+        ["<C-S-j>"] = actions.move_selection_next,
+        ["<C-S-K>"] = actions.move_selection_previous,
       },
     },
   },

@@ -47,9 +47,11 @@ function M.config()
     options = {
       globalstatus = true,
       icons_enabled = true,
-      theme = "auto",
+      theme = "catppuccin",
       component_separators = { left = "", right = "" },
-      section_separators = { left = "", right = "" },
+      section_separators = { left = '', right = '' },
+     -- component_separators = '|',
+    --section_separators = { left = '', right = '' },
       disabled_filetypes = { "alpha", "dashboard" },
       always_divide_middle = true,
     },

@@ -1,14 +1,14 @@
 local M = {}
 
 M.servers = {
+  "volar",
   "lua_ls",
   "cssls",
   "html",
   "tsserver",
   "pyright",
-  "bashls",
   "jsonls",
-  "yamlls",
+  "phpactor"
 }
 
 return M
