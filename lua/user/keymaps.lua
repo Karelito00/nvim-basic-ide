@@ -84,3 +84,4 @@ keymap("n", "<leader>p", "<cmd>lua vim.lsp.buf.format{ async = true }<cr>", opts
 
 -- search
 keymap("n", "<Space>", "/", opts)
+

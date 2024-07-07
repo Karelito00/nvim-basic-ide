@@ -6,10 +6,7 @@ local M = {
 }
 
 function M.config()
-  local status_ok, _ = pcall(vim.cmd.colorscheme, M.name)
-  if not status_ok then
-    return
-  end
+  vim.cmd.colorscheme "catppuccin"
 end
 
 return M
