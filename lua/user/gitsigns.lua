@@ -31,7 +31,8 @@ M.config = function()
       follow_files = true,
     },
     attach_to_untracked = true,
-    current_line_blame_formatter = "<author>, <author_time:%Y-%m-%d> - <summary>",
+    current_line_blame_formatter = "<abbrev_sha> <author>, <author_time:%Y-%m-%d> - <summary>",
+    current_line_blame = true,
     update_debounce = 200,
     max_file_length = 40000,
     preview_config = {
