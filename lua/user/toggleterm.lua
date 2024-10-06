@@ -4,6 +4,13 @@ local M = {
 }
 
 function M.config()
+  local wk = require "which-key"
+  wk.add {
+    {
+      "<leader>t", "<cmd>ToggleTerm<cr>", desc = "Terminal"
+    },
+  }
+
   local execs = {
     { nil, "<M-1>", "Horizontal Terminal", "horizontal", 0.3 },
     { nil, "<M-2>", "Vertical Terminal", "vertical", 0.4 },

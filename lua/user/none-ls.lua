@@ -18,7 +18,7 @@ function M.config()
       diagnostics.phpcs.with { extra_args = { "--standard=PSR12" } },
       require("none-ls.diagnostics.eslint_d"),
       formatting.prettierd,
-      formatting.stylua
+      formatting.black
     },
   }
 end
