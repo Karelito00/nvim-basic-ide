@@ -1,5 +1,6 @@
 local M = {
-  "folke/which-key.nvim"
+  "folke/which-key.nvim",
+  commit = { "6c1584eb76b55629702716995cca4ae2798a9cca" }
 }
 
 function M.config()
@@ -23,12 +24,11 @@ function M.config()
         g = false,
       },
     },
-    window = {
+    win = {
       border = "rounded",
       position = "bottom",
       padding = { 2, 2, 2, 2 },
     },
-    ignore_missing = true,
     show_help = false,
     show_keys = false,
     disable = {

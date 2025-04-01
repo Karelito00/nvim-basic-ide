@@ -19,11 +19,7 @@ local function on_attach(bufnr)
 end
 
 function M.config()
-  local wk = require "which-key"
-  wk.add {
-    { "<leader>n", "<cmd>NvimTreeToggle<CR>", desc = "Explorer" },
-  }
-
+  vim.keymap.set("n", "<leader>n", "<cmd>NvimTreeToggle<CR>", { silent = true })
   local icons = require "user.icons"
 
   require("nvim-tree").setup {

@@ -5,10 +5,7 @@ local M = {
 
 function M.config()
   local icons = require "user.icons"
-  local wk = require "which-key"
-  wk.add {
-    { "<leader>gg", "<cmd>Neogit<CR>", desc = "Neogit" },
-  }
+  vim.keymap.set("n", "<leader>gg", "<cmd>Neogit<CR>", { desc = "Neogit" })
 
   require("neogit").setup {
     auto_refresh = true,

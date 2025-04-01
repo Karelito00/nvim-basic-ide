@@ -4,18 +4,15 @@ local M = {
 }
 
 function M.config()
-  local wk = require "which-key"
-  wk.add {
-    { "<leader>bb", "<cmd>Telescope buffers previewer=false<cr>", desc =  "Find" },
-    { "<leader>fb", "<cmd>Telescope git_branches<cr>", desc = "Checkout branch" },
-    { "<leader>fc", "<cmd>Telescope colorscheme<cr>", desc = "Colorscheme" },
-    { "<leader>ff", "<cmd>Telescope find_files<cr>", desc = "Find files" },
-    { "<leader>fp", "<cmd>lua require('telescope').extensions.projects.projects()<cr>", desc = "Projects" },
-    { "<leader>ft", "<cmd>Telescope live_grep<cr>", desc = "Find Text" },
-    { "<leader>fh", "<cmd>Telescope help_tags<cr>", desc = "Help" },
-    { "<leader>fl", "<cmd>Telescope resume<cr>", desc = "Last Search" },
-    { "<leader>fr", "<cmd>Telescope oldfiles<cr>", desc = "Recent File" },
-  }
+  vim.keymap.set("n", "<leader>bb", "<cmd>Telescope buffers previewer=false<cr>", { desc = "Find" })
+  vim.keymap.set("n", "<leader>fb", "<cmd>Telescope git_branches<cr>", { desc = "Checkout branch" })
+  vim.keymap.set("n", "<leader>fc", "<cmd>Telescope colorscheme<cr>", { desc = "Colorscheme" })
+  vim.keymap.set("n", "<leader>ff", "<cmd>Telescope find_files<cr>", { desc = "Find files" })
+  vim.keymap.set("n", "<leader>fp", "<cmd>lua require('telescope').extensions.projects.projects()<cr>", { desc = "Projects" })
+  vim.keymap.set("n", "<leader>ft", "<cmd>Telescope live_grep<cr>", { desc = "Find Text" })
+  vim.keymap.set("n", "<leader>fh", "<cmd>Telescope help_tags<cr>", { desc = "Help" })
+  vim.keymap.set("n", "<leader>fl", "<cmd>Telescope resume<cr>", { desc = "Last Search" })
+  vim.keymap.set("n", "<leader>fr", "<cmd>Telescope oldfiles<cr>", { desc = "Recent File" })
 
   local icons = require "user.icons"
   local actions = require "telescope.actions"
